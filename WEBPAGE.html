@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Free AI Tools | Huda Fatima</title>
+    <style>
+        /* --- DESIGN SYSTEM --- */
+        :root {
+            --bg-dark: #020617;
+            --accent-blue: #38bdf8;
+            --accent-purple: #a855f7;
+            --card-bg: rgba(15, 23, 42, 0.8);
+            --text-main: #f8fafc;
+            --text-dim: #94a3b8;
+            --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            background: radial-gradient(circle at 50% -20%, #1e1b4b, #020617);
+            color: var(--text-main);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        /* --- HEADER & STUDENT INFO --- */
+        header {
+            text-align: center;
+            padding: 60px 20px 40px;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            background: linear-gradient(to bottom, #fff, #64748b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 25px;
+            font-weight: 900;
+            letter-spacing: -1px;
+        }
+
+        .student-card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255,255,255,0.1);
+            backdrop-filter: blur(12px);
+            padding: 25px 50px;
+            border-radius: 24px;
+            display: inline-block;
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+            animation: slideUp 0.8s ease-out;
+        }
+
+        .student-card p {
+            margin: 5px 0;
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+        }
+
+        .student-card b { color: var(--accent-blue); }
+
+        /* --- TOOL GRID --- */
+        .grid-container {
+            max-width: 1300px;
+            margin: 40px auto 80px;
+            padding: 0 25px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        /* --- CARD STYLE --- */
+        .tool-card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255,255,255,0.05);
+            border-radius: 28px;
+            padding: 35px;
+            text-align: center;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-15px);
+            border-color: var(--accent-purple);
+            box-shadow: 0 30px 60px -15px rgba(168, 85, 247, 0.2);
+            background: rgba(30, 41, 59, 0.95);
+        }
+
+        .img-wrapper {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff; /* White background for logos to pop */
+            border-radius: 22px;
+            padding: 12px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            transition: var(--transition);
+        }
+
+        .tool-card:hover .img-wrapper {
+            transform: rotate(-10deg) scale(1.1);
+        }
+
+        .img-wrapper img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .tool-name {
+            font-size: 1.6rem;
+            margin-bottom: 12px;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .tool-desc {
+            font-size: 0.95rem;
+            color: var(--text-dim);
+            margin-bottom: 30px;
+            flex-grow: 1;
+        }
+
+        .visit-btn {
+            text-decoration: none;
+            color: #fff;
+            background: #fff;
+            color: #000;
+            padding: 14px 40px;
+            border-radius: 14px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            transition: var(--transition);
+            width: 100%;
+        }
+
+        .visit-btn:hover {
+            background: var(--accent-blue);
+            color: #fff;
+            box-shadow: 0 0 30px rgba(56, 189, 248, 0.5);
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            text-align: center;
+            padding: 80px 20px;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            background: #020617;
+        }
+
+        footer p {
+            color: var(--text-dim);
+            font-size: 0.95rem;
+            margin: 8px 0;
+        }
+
+        /* --- ANIMATIONS --- */
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 480px) {
+            header { padding: 40px 10px; }
+            .student-card { padding: 20px; }
+            .grid-container { gap: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Top 10 Free AI Tools</h1>
+        <div class="student-card">
+            <p><b>Name:</b> Huda Fatima</p>
+            <p><b>Program:</b> BS Artificial Intelligence (BSAI)</p>
+            <p><b>Semester:</b> 3rd Semester</p>
+        </div>
+    </header>
+
+    <main class="grid-container">
+        
+        <div class="tool-card">
+            <div class="img-wrapper">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="ChatGPT">
+            </div>
+            <h3 class="tool-name">ChatGPT</h3>
+            <p class="tool-desc">The global leader in conversational AI for text generation, complex reasoning, and coding assistance.</p>
+            <a href="https://chat.openai.com" target="_blank" class="visit-btn">Visit Website</a>
+        </div>
+
+        <div class="tool-card">
+            <div class="img-wrapper">
+                <img src="perplexity AI.jpg" alt="Perplexity">
+            </div>
+            <h3 class="tool-name">Perplexity AI</h3>
+            <p class="tool-desc">An AI-first search engine that delivers concise answers with real-time web citations.</p>
+            <a href="https://www.perplexity.ai" target="_blank" class="visit-btn">Visit Website</a>
+        </div>
+
+        <div class="tool-card">
+            <div class="img-wrapper">
+                <img src="leonardo ai.png" alt="Leonardo">
+            </div>
+            <h3 class="tool-name">Leonardo AI</h3>
+            <p class="tool-desc">Advanced generative platform for creating high-quality assets, artwork, and visual textures.</p>
+            <a href="https://leonardo.ai" target="_blank" class="visit-btn">Visit Website</a>
+        </div>
+
+        <div class="tool-card">
+            <div class="img-wrapper">
+                <img src="Tome ai.webp" alt="Tome">
+            </div>
+            <h3 class="tool-name">Tome AI</h3>
+            <p class="tool-desc">AI-powered storytelling tool that generates polished slide decks and presentations instantly.</p>
+            <a href="https://tome.app" target="_blank" class="visit-btn">Visit Website</a>
+        </div>
+
+        <div class="tool-card">
+            <div class="img-wrapper">
+                <img src="https://durable.co/favicon.ico" alt="Durable">
+            </div>
+            <h3 class="tool-name">Durable AI</h3>
+            <p class="tool-desc">The fastest AI website builder—create a complete site with copy and images in 30 seconds.</p>
+            <a href="https://durable.co" target="_blank" class="visit-btn">Visit Website</a>
+        </div>
+
+        <div class="tool-card">
+            <div class="img-wrapper">
+                <img src="copy ai.jpg" alt="Copy.ai">
+            </div>
+            <h3 class="tool-name">Copy.ai</h3>
+            <p class="tool-desc">Professional AI copywriting tool for marketing, social media, and business communication.</p>
+            <a href="https://www.copy.ai" target="_blank" class="visit-btn">Visit Website</a>
+        </div>
+
+        <div class="tool-card">
+            <div class="img-wrapper">
+                <img src="RUNWAY ML.png" alt="Runway">
+            </div>
+            <h3 class="tool-name">Runway ML</h3>
+            <p class="tool-desc">A suite of creative tools focused on AI-powered video editing and text-to-video generation.</p>
+            <a href="https://runwayml.com" target="_blank" class="visit-btn">Visit Website</a>
+        </div>
+
+        <div class="tool-card">
+            <div class="img-wrapper">
+                <img src="https://elevenlabs.io/favicon.ico" alt="ElevenLabs">
+            </div>
+            <h3 class="tool-name">ElevenLabs</h3>
+            <p class="tool-desc">Industry-leading AI voice generator with incredibly realistic text-to-speech capabilities.</p>
+            <a href="https://elevenlabs.io" target="_blank" class="visit-btn">Visit Website</a>
+        </div>
+
+        <div class="tool-card">
+            <div class="img-wrapper">
+                <img src="MIDJOURNEY AI.webp" alt="Midjourney">
+            </div>
+            <h3 class="tool-name">Midjourney</h3>
+            <p class="tool-desc">World-renowned AI art generator that produces photorealistic and artistic masterpieces.</p>
+            <a href="https://www.midjourney.com" target="_blank" class="visit-btn">Visit Website</a>
+        </div>
+
+        <div class="tool-card">
+            <div class="img-wrapper">
+                <img src="https://www.slidesai.io/favicon.ico" alt="SlidesAI">
+            </div>
+            <h3 class="tool-name">SlidesAI</h3>
+            <p class="tool-desc">An automated tool that turns text into professional, presentation-ready Google Slides.</p>
+            <a href="https://www.slidesai.io" target="_blank" class="visit-btn">Visit Website</a>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Created for AI Assignment – BSAI 3rd Semester</p>
+        <p>All tools have free versions</p>
+        <p>Designed using Gemini AI &copy; 2026</p>
+    </footer>
+
+</body>
+</html>
